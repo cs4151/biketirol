@@ -79,8 +79,8 @@ const controlElevation = L.control.elevation({
 }).addTo(map);
 controlElevation.load("data/etappe11.gpx");
 
-// minimap plugin mit Grundkarte Tirol Sommer als Layer
 
+// minimap plugin mit Grundkarte Tirol Sommer als Layer
 var gkTirol = new L.TileLayer("https://wmts.kartetirol.at/gdi_summer/{z}/{x}/{y}.png");
 var miniMap = new L.Control.MiniMap(gkTirol, {
     toggleDisplay: true
